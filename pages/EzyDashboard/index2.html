@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | EzyDashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  
+
+<style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/Backoffice/AdminLTE-2.3.0/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" type="text/css" href="https://ezyhaul.com/assets/css/bootstrap-material-datetimepicker.css">
+    <link rel="stylesheet" type="text/css" href="https://ezyhaul.com/assets/css/jquery.timepicker.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/main.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/home.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/book_shipment.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/myaccount.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/booking_complete.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/save_booking.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/myshipment.css">
+
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/myinvoices.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/addressbook.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/myaddress_addnew.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/rates.css">
+    <link rel="stylesheet" type="text/css" href="https://ezyhaul.com/assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/nanoscroller.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/shipment_details.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/colorbox/colorbox.css">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/fancybox/jquery.fancybox.css?v=2.1.5" media="screen">
+    <link rel="stylesheet" href="https://ezyhaul.com/assets/css/invoice.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://ezyhaul.com/assets/css/PhoneValidate/intlTelInput.css" rel="stylesheet">
+    <!-- JqGrid -->
+    <link rel="stylesheet" type="text/css" href="https://ezyhaul.com/Scripts/jquery.jqGrid-4.5.2/css/ui.jqgrid.css">
+    <link href="/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css">
+
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="https://ezyhaul.com/assets/js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/FezVrasta/bootstrap-material-design/master/dist/js/material.min.js"></script>
+    <script type="text/javascript" src="https://ezyhaul.com/assets/js/moment-with-locales.js"></script>
+    <script type="text/javascript" src="https://ezyhaul.com/assets/js/jquery.idTabs.min.js"></script>
+    <script type="text/javascript" src="https://ezyhaul.com/assets/js/perfect-scrollbar.jquery.min.js"></script>
+    <script type="text/javascript" src="https://ezyhaul.com/Scripts/CustomJS.js"></script>
+    <script type="text/javascript" src="https://ezyhaul.com/assets/js/bootstrap-material-datetimepicker.js"></script>
+    <script type="text/javascript" src="https://ezyhaul.com/assets/js/jquery.timepicker.js"></script>
+    <script type="text/javascript" src="https://ezyhaul.com/assets/js/main.js"></script>
+    <script type="text/javascript" src="https://ezyhaul.com/assets/js/addressbook.js"></script>
+    <script type="text/javascript" src="https://ezyhaul.com/assets/js/jquery.nanoscroller.min.js"></script>
+    <script type="text/javascript" src="https://ezyhaul.com/assets/js/shipmentdetails.js"></script>
+    <script src="https://ezyhaul.com/Scripts/jquery.jqGrid-4.5.2/js/jquery.jqGrid.src.js"></script>
+    <script src="https://ezyhaul.com/Scripts/jquery.jqGrid-4.5.2/js/i18n/grid.locale-en.js"></script>
+    <script type="text/javascript" src="https://ezyhaul.com/assets/colorbox/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://ezyhaul.com/assets/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+    <script type="text/javascript" src="https://ezyhaul.com/Scripts/jquery.signalR-2.2.0.js"></script>
+    <script src="signalr/hubs"></script>
+    <script type="text/javascript" src="https://ezyhaul.com/assets/js/jquery.cookie.js"></script>
+
+    <script src="https://ezyhaul.com/assets/js/PhoneValidate/intlTelInput.js"></script>
+    <script type="text/javascript" src="https://ezyhaul.com/Scripts/jquery.limitkeypress.js"></script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA89uVfgUSuHI3LNGAYnI5nx17znJ5ReQ&amp;libraries=places,geometry&amp;language=en">
+    </script>
+	
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style>
+
+
+
+  
+  
+  
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect.
+  -->
+  <link rel="stylesheet" href="../../dist/css/skins/skin-yellow.min.css">
+  <!--<link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">-->
+  <!--Private CSS-->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition skin-yellow layout-top-nav">
+<div class="wrapper dashboard-bg">
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <br><br><br>
+    <section class="content-header">
+      <h1 style="color: #000;">
+        MY SHIPMENTS WITH EZYHAUL
+        <small>Optional description</small>
+      </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <!--Notification Boxes-->
+      <div class="row">
+        <!--Latest Booking-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box bg-red-gradient">
+            <span class="info-box-icon"><i class="fa fa-hourglass-start"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text text-gray">
+                Latest Booking
+                <a href="#" class="info-box-text pull-right">
+                  <i class="fa fa-arrow-circle-right"></i>
+                </a>
+              </span>
+              <span class="info-box-text">
+                <i class="fa fa-long-arrow-right"></i> 
+                Name of Company
+              </span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+            <span class="progress-description">
+              <i class="fa fa-calendar"></i> 
+              Pickup in 1000 mins
+            </span>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!--/Latest Booking-->
+        <!--Starting Soon-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box bg-yellow-gradient">
+            <span class="info-box-icon"><i class="fa fa-hourglass-end"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text text-gray">
+                Starting Soon
+                <a href="#" class="info-box-text pull-right">
+                  <i class="fa fa-arrow-circle-right"></i>
+                </a>
+              </span>
+              <span class="info-box-text">
+                <i class="fa fa-long-arrow-right"></i> 
+                Name of Company
+              </span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+            <span class="progress-description">
+              <i class="fa fa-clock-o"></i> 
+              Starting in 100 mins
+            </span>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!--/Starting Soon-->
+        <!--Completing Soon-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box bg-green-gradient">
+            <span class="info-box-icon"><i class="fa fa-flag"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text text-gray">
+                Completing Soon
+                <a href="#" class="info-box-text pull-right">
+                  <i class="fa fa-arrow-circle-right"></i>
+                </a>
+              </span>
+              <span class="info-box-text">
+                <i class="fa fa-long-arrow-right"></i> 
+                Name of Company
+              </span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+            <span class="progress-description">
+              <i class="fa fa-truck"></i> 
+              Arriving in 10 mins
+            </span>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!--/Completing Soon-->
+        <!--Last Completed-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box bg-green-active">
+            <span class="info-box-icon"><i class="fa fa-check-square-o"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text text-gray">
+                Last completed
+                <a href="#" class="info-box-text pull-right">
+                  <i class="fa fa-arrow-circle-right"></i>
+                </a>
+              </span>
+              <span class="info-box-text">
+                <i class="fa fa-long-arrow-right"></i> 
+                Name of Company
+              </span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 70%"></div>
+            </div>
+            <span class="progress-description">
+              <i class="fa fa-cubes"></i> 
+              Completed 1 out of 10
+            </span>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!--/Last Completed-->
+      </div>
+      <!--./row-->
+      <!--/Notification Boxes-->
+      <!--Content-->
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Custom Tabs (Pulled to the right) -->
+          <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs pull-right">
+              <li class="pull-left header"><i class="fa fa-bar-chart"></i> </li>
+              <li class="active"><a href="#tab_1-1" data-toggle="tab">Week</a></li>
+              <li><a href="#tab_2-1" data-toggle="tab">Month</a></li>
+              <li><a href="#tab_3-1" data-toggle="tab">Annual</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade in active" id="tab_1-1" style="min-height: 350px;">
+                <div class="box box-solid box-gray-bg">
+                  <!--Loading State-->
+                  <!--<div class="overlay">
+                    <i class="fa fa-refresh fa-spin"></i>
+                  </div>-->
+                  <!--/Loading State-->
+                  <div class="box-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <!-- Doughnut Title -->
+                        <p class="text-center">
+                          <strong>Shipments: 1 Jan, 2014 - 30 Jul, 2014</strong>
+                        </p>
+                        <!-- Doughnut Chart Canvas -->
+                        <div class="chart-responsive pie-height-default margin-bottom-20">
+                          <canvas id="pieChart"></canvas>
+                        </div>
+                        <!-- /.chart-responsive -->
+                      </div>
+                      <!-- /.col -->
+                      <div class="col-md-4 col-sm-12">
+                        <!-- Week Picker -->
+                        <div class="form-group pull-right">
+                          <div class="input-group">
+                            <button type="button" class="btn btn-default pull-right" id="selectWeek-btn">
+                              &nbsp;
+                              <span>
+                                <i class="fa fa-calendar"></i>&nbsp; Select Week 
+                              </span>
+                              &nbsp;
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <!-- /.form group -->
+                      </div>
+                      <div class="col-md-4 col-sm-12 col-xs-12">
+                        <p class="text-center">
+                          <strong>Shipments Breakdown</strong>
+                        </p>
+                        <!--Not Accepted-->
+                        <div class="progress-group">
+                          <span class="progress-text">Not Accepted</span>
+                          <span class="progress-number"><b>2</b>/10</span>
+
+                          <div class="progress sm">
+                            <div class="progress-bar progress-bar-striped active progress-bar-aqua" style="width: 20%" data-toggle="tooltip" title="Next Timeout" data-placement="auto"></div>
+                          </div>
+                        </div>
+                        <!-- /.progress-group -->
+                        <!--/Not Accepted-->
+                        <!--Accepted-->
+                        <div class="progress-group">
+                          <span class="progress-text">Accepted</span>
+                          <span class="progress-number"><b>4</b>/10</span>
+
+                          <div class="progress sm">
+                            <div class="progress-bar progress-bar-striped active progress-bar-blue" style="width: 40%" data-toggle="tooltip" title="Last Accepted" data-placement="auto"></div>
+                          </div>
+                        </div>
+                        <!-- /.progress-group -->
+                        <!--/Accepted-->
+                        <!--Currently Running-->
+                        <div class="progress-group">
+                          <span class="progress-text">Currently Running</span>
+                          <span class="progress-number"><b>2</b>/10</span>
+
+                          <div class="progress sm">
+                            <div class="progress-bar progress-bar-striped active progress-bar-green" style="width: 20%" data-toggle="tooltip" title="Last Started" data-placement="auto"></div>
+                          </div>
+                        </div>
+                        <!-- /.progress-group -->
+                        <!--/Currently Running-->
+                        <!--Completed-->
+                        <div class="progress-group">
+                          <span class="progress-text">Completed</span>
+                          <span class="progress-number"><b>1</b>/10</span>
+
+                          <div class="progress sm">
+                            <div class="progress-bar progress-bar-striped active progress-bar-yellow" style="width: 10%" data-toggle="tooltip" title="Unpaid Shipments" data-placement="auto"></div>
+                          </div>
+                        </div>
+                        <!-- /.progress-group -->
+                        <!--/Completed-->
+                      </div>
+                      <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- ./box-body -->
+                  <div class="box-footer">
+                    <div class="row">
+                      <!--Volume-->
+                      <div class="col-sm-3 col-xs-6">
+                        <div class="description-block border-right">
+                          <h5 class="description-header">1200 m<sup>3</sup></h5>
+                          <span class="description-text">Volume</span>
+                        </div>
+                        <!-- /.description-block -->
+                      </div>
+                      <!--/.col-->
+                      <!--/Volume-->
+                      <!--Weight-->
+                      <div class="col-sm-3 col-xs-6">
+                        <div class="description-block border-right">
+                          <h5 class="description-header">24,813.53 KG</h5>
+                          <span class="description-text">Weight</span>
+                        </div>
+                        <!-- /.description-block -->
+                      </div>
+                      <!-- /.col -->
+                      <!--/Weight-->
+                      <!--Overdue Payments-->
+                      <div class="col-sm-3 col-xs-6">
+                        <div class="description-block border-right">
+                          <h5 class="description-header">RM 10,390.90</h5>
+                          <span class="description-text">Overdue Payments</span>
+                        </div>
+                        <!-- /.description-block -->
+                      </div>
+                      <!-- /.col -->
+                      <!--/Overdue Payments-->
+                      <!--Total Freight Spend-->
+                      <div class="col-sm-3 col-xs-6">
+                        <div class="description-block border-right">
+                          <h5 class="description-header">RM 35,210.43</h5>
+                          <span class="description-text">Total Freight Spend</span>
+                        </div>
+                        <!-- /.description-block -->
+                      </div>
+                      <!-- /.col -->
+                      <!--/Total Freight Spend-->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.box-footer -->
+                </div>
+                <!-- /.box -->
+              </div>
+              <!-- /.tab-pane -->
+              <div class="tab-pane fade" id="tab_2-1" style="min-height: 350px;">
+                <div class="box box-solid box-gray-bg">
+                  <!--Loading State-->
+                  <!--<div class="overlay">
+                    <i class="fa fa-refresh fa-spin"></i>
+                  </div>-->
+                  <!--/Loading State-->
+                  <div class="box-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <!-- Doughnut Title -->
+                        <p class="text-center">
+                          <strong>Shipments: 1 Jan, 2014 - 30 Jul, 2014</strong>
+                        </p>
+                        <!-- Doughnut Chart Canvas -->
+                        <div class="chart-responsive pie-height-default margin-bottom-20">
+                          <canvas id="pieChartMonth"></canvas>
+                        </div>
+                        <!-- /.chart-responsive -->
+                      </div>
+                      <!-- /.col -->
+                      <div class="col-md-4 col-sm-12">
+                        <!-- Week Picker -->
+                        <div class="form-group pull-right">
+                          <div class="input-group">
+                            <button type="button" class="btn btn-default pull-right" id="selectMonth-btn">
+                              &nbsp;
+                              <span>
+                                <i class="fa fa-calendar"></i>&nbsp; Select Month 
+                              </span>
+                              &nbsp;
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <!-- /.form group -->
+                      </div>
+                      <!--Breakdown-->
+                      <div class="col-md-4 col-sm-12 col-xs-12">
+                        <p class="text-center">
+                          <strong>Shipments Breakdown</strong>
+                        </p>
+                        <!--Not Accepted-->
+                        <div class="progress-group">
+                          <span class="progress-text">Not Accepted</span>
+                          <span class="progress-number"><b>2</b>/10</span>
+
+                          <div class="progress sm">
+                            <div class="progress-bar progress-bar-striped active progress-bar-aqua" style="width: 20%" data-toggle="tooltip" title="Next Timeout" data-placement="auto"></div>
+                          </div>
+                        </div>
+                        <!-- /.progress-group -->
+                        <!--/Not Accepted-->
+                        <!--Accepted-->
+                        <div class="progress-group">
+                          <span class="progress-text">Accepted</span>
+                          <span class="progress-number"><b>4</b>/10</span>
+
+                          <div class="progress sm">
+                            <div class="progress-bar progress-bar-striped active progress-bar-red" style="width: 40%" data-toggle="tooltip" title="Last Accepted" data-placement="auto"></div>
+                          </div>
+                        </div>
+                        <!-- /.progress-group -->
+                        <!--/Accepted-->
+                        <!--Currently Running-->
+                        <div class="progress-group">
+                          <span class="progress-text">Currently Running</span>
+                          <span class="progress-number"><b>2</b>/10</span>
+
+                          <div class="progress sm">
+                            <div class="progress-bar progress-bar-striped active progress-bar-green" style="width: 20%" data-toggle="tooltip" title="Last Started" data-placement="auto"></div>
+                          </div>
+                        </div>
+                        <!-- /.progress-group -->
+                        <!--/Currently Running-->
+                        <!--Completed-->
+                        <div class="progress-group">
+                          <span class="progress-text">Completed</span>
+                          <span class="progress-number"><b>1</b>/10</span>
+
+                          <div class="progress sm">
+                            <div class="progress-bar progress-bar-striped active progress-bar-yellow" style="width: 10%" data-toggle="tooltip" title="Unpaid Shipments" data-placement="auto"></div>
+                          </div>
+                        </div>
+                        <!-- /.progress-group -->
+                        <!--/Completed-->
+                      </div>
+                      <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- ./box-body -->
+                  <div class="box-footer">
+                    <div class="row">
+                      <!--Volume-->
+                      <div class="col-sm-3 col-xs-6">
+                        <div class="description-block border-right">
+                          <h5 class="description-header">1200 m<sup>3</sup></h5>
+                          <span class="description-text">Volume</span>
+                        </div>
+                        <!-- /.description-block -->
+                      </div>
+                      <!--/.col-->
+                      <!--/Volume-->
+                      <!--Weight-->
+                      <div class="col-sm-3 col-xs-6">
+                        <div class="description-block border-right">
+                          <h5 class="description-header">24,813.53 KG</h5>
+                          <span class="description-text">Weight</span>
+                        </div>
+                        <!-- /.description-block -->
+                      </div>
+                      <!-- /.col -->
+                      <!--/Weight-->
+                      <!--Overdue Payments-->
+                      <div class="col-sm-3 col-xs-6">
+                        <div class="description-block border-right">
+                          <h5 class="description-header">RM 10,390.90</h5>
+                          <span class="description-text">Overdue Payments</span>
+                        </div>
+                        <!-- /.description-block -->
+                      </div>
+                      <!-- /.col -->
+                      <!--/Overdue Payments-->
+                      <!--Total Freight Spend-->
+                      <div class="col-sm-3 col-xs-6">
+                        <div class="description-block border-right">
+                          <h5 class="description-header">RM 35,210.43</h5>
+                          <span class="description-text">Total Freight Spend</span>
+                        </div>
+                        <!-- /.description-block -->
+                      </div>
+                      <!-- /.col -->
+                      <!--/Total Freight Spend-->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.box-footer -->
+                </div>
+              </div>
+              <!-- /.tab-pane -->
+              <div class="tab-pane fade" id="tab_3-1" style="min-height: 350px;">
+                <div class="box box-solid box-gray-bg">
+                  <div class="box-body">
+                    <div class="col-sm-12">
+                      <div class="row">
+                        <!-- BAR CHART -->
+                        <div class="col-md-9 hidden-xs">
+                          <div class="chart-responsive">
+                            <canvas id="barChart"></canvas>
+                          </div>
+                        </div>
+                        <!-- ./col -->
+                        <!--/BAR CHART-->
+                        <!--<div class="col-md-1"></div>-->
+                        <!--Year Picker-->
+                        <div class="col-md-3 col-sm-12 col-xs-12 margin-bottom">
+                          <div class="btn-group pull-right">
+                            <button type="button" class="btn btn-default">This Year</button>
+                            <button type="button" class="btn btn-default">Last Year</button>
+                            <!--<button type="button" class="btn btn-default">Select</button>-->
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                              <span class="caret"></span>
+                              <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">2015</a></li>
+                              <li><a href="#">2014</a></li>
+                              <li><a href="#">2013</a></li>
+                              <!--<li class="divider"></li>
+                              <li><a href="#">Separated link</a></li>-->
+                            </ul>
+                          </div>
+                        </div>
+                        <br><br>
+                        <!--/Year Picker-->
+                        <!--EzyHaul Total-->
+                        <div class="col-md-3 col-sm-4">
+                          <!-- small box -->
+                          <div class="small-box bg-green label-sm">
+                            <div class="inner">
+                              <h3>RM 15250</h3>
+                              <p>with EzyHaul</p>
+                            </div>
+                            <div class="icon">
+                              <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <a href="#" class="small-box-footer">
+                              More info <i class="fa fa-arrow-circle-right"></i>
+                            </a>
+                          </div>
+                          <!--/small box-->
+                        </div>
+                        <!-- ./col -->
+                        <!--/EzyHaul Total-->
+                        <!--<div class="col-md-1"></div>-->
+                        <!--Volume-->
+                        <div class="col-md-3 col-sm-4">
+                          <!-- small box -->
+                          <div class="small-box bg-teal label-sm">
+                            <div class="inner">
+                              <h3>12030 m<sup>3</sup></h3>
+                              <p>Total Volume</p>
+                            </div>
+                            <div class="icon">
+                              <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <a href="#" class="small-box-footer">
+                              More info <i class="fa fa-arrow-circle-right"></i>
+                            </a>
+                          </div>
+                          <!--/small box-->
+                        </div>
+                        <!-- ./col -->
+                        <!--/Volume-->
+                        <!--<div class="col-md-1"></div>-->
+                        <!--Weight-->
+                        <div class="col-md-3 col-sm-4">
+                          <!-- small box -->
+                          <div class="small-box bg-blue label-sm">
+                            <div class="inner">
+                              <h3>24,813.53 KG</h3>
+                              <p>Total Weight</p>
+                            </div>
+                            <div class="icon">
+                              <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <a href="#" class="small-box-footer">
+                              More info <i class="fa fa-arrow-circle-right"></i>
+                            </a>
+                          </div>
+                          <!--/small box-->
+                        </div>
+                        <!-- ./col -->
+                        <!--/Weight-->
+                      </div>
+                      <!--/.row-->
+                    </div>
+                    <!--/.col-->
+                  </div>
+                  <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+              </div>
+              <!-- /.tab-pane -->
+            </div>
+            <!-- /.tab-content -->
+          </div>
+          <!-- nav-tabs-custom -->
+        </div>
+      </div>
+      <!--/Content-->
+
+      <!-- Your Page Content Here -->
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 2.2.3 -->
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="../../plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/app.min.js"></script>
+<!-- ChartJS 1.0.1 -->
+<script src="../../plugins/chartjs/Chart.min.js"></script>
+<!-- date-range-picker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Slimscroll -->
+<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- Private JS -->
+<script src="index.js"></script>
+<!-- AdminLTE for demo purposes -->
+<!--<script src="../../dist/js/demo.js"></script>-->
+
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+</body>
+</html>
